@@ -1,0 +1,14 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    
+    <aura:attribute name="sub" type="map" />
+    <aura:attribute name="mapMarkers" type="Object"/>
+    <aura:attribute name="zoomLevel" type="Integer" />
+<lightning:utilityBarAPI aura:id="utilitybar"/>
+<div class="container"> 
+    <lightning:empApi aura:id="empApi" />	
+	<lightning:notificationsLibrary aura:id="notifLib"/>
+    <lightning:map mapMarkers="{!v.mapMarkers}" zoomLevel="{!v.zoomLevel}" aura:id="map" />
+</div>
+
+</aura:component>

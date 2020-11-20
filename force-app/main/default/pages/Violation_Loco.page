@@ -1,0 +1,6 @@
+<apex:page standardController="Violation__c" >
+    <apex:slds />
+    <apex:map width="1075px" height="667px" mapType="roadmap" zoomLevel="15" center="{latitude:{!Violation__c.Violation_Geolocation__Latitude__s}, longitude:{!Violation__c.Violation_Geolocation__Longitude__s}}" >
+         <apex:mapMarker title="{!Violation__c.Name}" position="{latitude:{!Violation__c.Violation_Geolocation__Latitude__s}, longitude:{!Violation__c.Violation_Geolocation__Longitude__s}}"/>
+    </apex:map>
+</apex:page>
