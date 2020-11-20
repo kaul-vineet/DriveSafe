@@ -5,4 +5,40 @@
         <default>false</default>
         <visible>true</visible>
     </applicationVisibilities>
+    
+    -<objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Violation__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+
+    -<objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Vehicle__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+
+    -<objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Violation_Events__e</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+
+    -<tabVisibilities>
+        <tab>Vehicle__c</tab>
+        <tab>Violation__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
 </Profile>
