@@ -40,8 +40,178 @@
         <tab>Vehicle__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
+
     -<tabVisibilities>
         <tab>Violation__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Violation_Events__e.Date_of_Violation__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Violation_Events__e.Description__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Violation_Events__e.value__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Violation_Events__e.Vehicle__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Violation_Events__e.Violation_Code_c__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Violation_Events__e.Violation_Geolocation_Long__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Violation_Events__e.Violation_Geolocation_Lat__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Violation__c.Date_of_Violation__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Violation__c.Description__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Violation__c.Vehicle__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Violation__c.Violation_Code__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Violation__c.Violation_Geolocation__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Violation__c.Name</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Violation__c.Notified_User_via_SMS__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Vehicle__c.Engine_Number__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Vehicle__c.Insurance_Company_Name__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Vehicle__c.Insurance_Validity_From__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Vehicle__c.Insurance_Validity_To__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Vehicle__c.Maker_Model__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Vehicle__c.Manufacturer__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Vehicle__c.PAN_GIR_No__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Vehicle__c.Registration_Date__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Vehicle__c.Registration_Number__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Vehicle__c.Type__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Vehicle__c.Vehicle_Class__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Vehicle__c.Name</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Vehicle__c.Vehicle_Owner__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
+    <field>Vehicle__c.VIN__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
 </Profile>
