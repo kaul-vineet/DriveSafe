@@ -38,6 +38,9 @@
 
     -<tabVisibilities>
         <tab>Vehicle__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    -<tabVisibilities>
         <tab>Violation__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
