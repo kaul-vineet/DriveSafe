@@ -4,7 +4,7 @@
     <aura:attribute name="sub" type="map" />
     <aura:attribute name="mapMarkers" type="Object"/>
     <aura:attribute name="zoomLevel" type="Integer" />
-<lightning:utilityBarAPI aura:id="utilitybar"/>
+<lightning:utilityBarAPI aura:id="utilitybar" disableUtilityPopOut="true"/>
 <div class="container"> 
     <lightning:empApi aura:id="empApi" />	
 	<lightning:notificationsLibrary aura:id="notifLib"/>
