@@ -1,4 +1,4 @@
-# Salesforce App
+# DriveSafe: An IoT use case for auto industry. Built and orchestrated on Salesforce platform.
 
 This guide helps Salesforce developers who are new to Visual Studio Code go from zero to a deployed app using Salesforce Extensions for VS Code and Salesforce CLI.
 
