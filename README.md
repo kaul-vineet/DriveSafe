@@ -36,7 +36,11 @@ Once the package is successfullt deployed, follow the steps below:
   - Fill in rest of the fields as you see fit.
 <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/Screenshot%202020-08-13%20at%2011.37.01%20PM.png">
 
-## Step 2: Deploy NODE-RED on Heroku. 
+
+## Step 2: Deploy Mule Application on CloudHub. 
+
+
+## Step 3: Deploy NODE-RED on Heroku. 
 
 - <a href="https://signup.heroku.com/"> Sign up for a Heroku account. </a> I am using <a href="https://github.com/joeartsea"> Atsushi Kojo's </a> implementation of NODE-RED on Heroku. 
 - Setup a NODE-RED instance on Heroku. Click on the deploy button below and follow the steps. 
@@ -47,8 +51,28 @@ Once the package is successfullt deployed, follow the steps below:
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 
+- Navigate to <a href="https://dashboard.heroku.com/"> Heroku Dashboard. </a>
+  - Open the NODE-RED application. 
+  - Click on the **Resource** tab.
+  
 
-- Login into the Heroku App. Use NODE_RED_USERNAME & NODE_RED_PASSWORD as credentials.
+- Provision a MQTT server to the NODE-RED application.
+  - Under **Add-On**, type *CloudMQTT*. A CloudMQTT option would appear. Click on it. 
+  - Select a free plan in the provisioning pop-up and click on *Sumbit Order Form*. 
+<img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/MQTT%20-%20install.png">
+  
+- Once provisioned, CloudMQTT would appear under Add-ons. Click on the CloudMQTT icon in the list to go to the CloudMQTT setup. 
+  - In ClodMQTT setup, note the following
+   - Server
+   - User 
+   - Password
+   - Port
+<img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/MQTT.png">
+  
+  
+- Login into the Heroku App. 
+  - Use NODE_RED_USERNAME & NODE_RED_PASSWORD as credentials.
+
 
 - Click on hamburger menu at top right corner. 
   - Click on *Manage palette
@@ -68,6 +92,7 @@ Once the package is successfullt deployed, follow the steps below:
 <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/import-flow.png">
 
 
+- 
 ## The `sfdx-project.json` File
 
 The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
@@ -87,14 +112,4 @@ The `packageDirectories` filepath tells VS Code and Salesforce CLI where the met
 ]
 ```
 
-## Part 2: Working with Source
 
-For details about developing against scratch orgs, see the [Package Development Model](https://trailhead.salesforce.com/en/content/learn/modules/sfdx_dev_model) module on Trailhead or [Package Development Model with VS Code](https://forcedotcom.github.io/salesforcedx-vscode/articles/user-guide/package-development-model).
-
-For details about developing against orgs that don’t have source tracking, see the [Org Development Model](https://trailhead.salesforce.com/content/learn/modules/org-development-model) module on Trailhead or [Org Development Model with VS Code](https://forcedotcom.github.io/salesforcedx-vscode/articles/user-guide/org-development-model).
-
-## Part 3: Deploying to Production
-
-Don’t deploy your code to production directly from Visual Studio Code. The deploy and retrieve commands do not support transactional operations, which means that a deployment can fail in a partial state. Also, the deploy and retrieve commands don’t run the tests needed for production deployments. The push and pull commands are disabled for orgs that don’t have source tracking, including production orgs.
-
-Deploy your changes to production using [packaging](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_dev2gp.htm) or by [converting your source](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_source.htm#cli_reference_convert) into metadata format and using the [metadata deploy command](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_mdapi.htm#cli_reference_deploy).
