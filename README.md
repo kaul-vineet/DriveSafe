@@ -46,19 +46,27 @@ Once the package is successfullt deployed, follow the steps below:
 - Setup Mule application properties
   - Open the application .jar file. 
   - Open the mule-artifact.propeties and edit following parameters:
-  > salesforce.General.securityToken.value=*security token of the Salesforce Org*
-  
-  > cloudhub_http.Connection.host.value=0.0.0.0
-  
-  > cloudhub_http.Connection.port.value=8081
-  
-  > salesforce.General.username.value=*username of the Salesforce Org*
-  
-  > salesforce.General.password.value=*password of the Salesforce Org*
-  
+   - salesforce.General.securityToken.value=*security token of the Salesforce Org*
+   - cloudhub_http.Connection.host.value=0.0.0.0
+   - cloudhub_http.Connection.port.value=8081
+   - salesforce.General.username.value=*username of the Salesforce Org*
+   - salesforce.General.password.value=*password of the Salesforce Org*
   - Save the file at it's original location. 
   - Close the application .jar file.
 <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/mule-config.png">
+
+
+- Login into <a href="https://anypoint.mulesoft.com/login"> Anypoint Platform </>.
+  - Go to *Runtime Manager*
+  
+  
+- Click on **Deploy application** button. 
+  - On the Deploy Application screen, fill in tehe details as below
+   - Application Name: Any suitable name
+   - Deployment Target: CloudHub
+   - Application file: Upload the edited application .jar file.
+ <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/deploy-mule.png">
+  -Click on the **Deploy Application** button.
 
 ## Step 3: Deploy NODE-RED on Heroku. 
 
