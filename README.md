@@ -56,7 +56,7 @@ Once the package is successfullt deployed, follow the steps below:
 <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/mule-config.png">
 
 
-- Login into <a href="https://anypoint.mulesoft.com/login"> Anypoint Platform </>.
+- Login into <a href="https://anypoint.mulesoft.com/login"> Anypoint Platform </a>.
   - Go to *Runtime Manager*
   
   
