@@ -40,6 +40,26 @@ Once the package is successfullt deployed, follow the steps below:
 ## Step 2: Deploy Mule Application on CloudHub. 
 
 
+- Download the mule application <a href="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/mule-app/tardisviolationservicev2.jar">.jar file</a>.
+
+
+- Setup Mule application properties
+  - Open the application .jar file. 
+  - Open the mule-artifact.propeties and edit following parameters:
+  > salesforce.General.securityToken.value=*security token of the Salesforce Org*
+  
+  > cloudhub_http.Connection.host.value=0.0.0.0
+  
+  > cloudhub_http.Connection.port.value=8081
+  
+  > salesforce.General.username.value=*username of the Salesforce Org*
+  
+  > salesforce.General.password.value=*password of the Salesforce Org*
+  
+  - Save the file at it's original location. 
+  - Close the application .jar file.
+<img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/mule-config.png">
+
 ## Step 3: Deploy NODE-RED on Heroku. 
 
 - <a href="https://signup.heroku.com/"> Sign up for a Heroku account. </a> I am using <a href="https://github.com/joeartsea"> Atsushi Kojo's </a> implementation of NODE-RED on Heroku. 
@@ -93,23 +113,6 @@ Once the package is successfullt deployed, follow the steps below:
 
 
 - 
-## The `sfdx-project.json` File
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-The most important parts of this file for getting started are the `sfdcLoginUrl` and `packageDirectories` properties.
-
-The `sfdcLoginUrl` specifies the default login URL to use when authorizing an org.
-
-The `packageDirectories` filepath tells VS Code and Salesforce CLI where the metadata files for your project are stored. You need at least one package directory set in your file. The default setting is shown below. If you set the value of the `packageDirectories` property called `path` to `force-app`, by default your metadata goes in the `force-app` directory. If you want to change that directory to something like `src`, simply change the `path` value and make sure the directory you’re pointing to exists.
-
-```json
-"packageDirectories" : [
-    {
-      "path": "force-app",
-      "default": true
-    }
-]
-```
 
 
