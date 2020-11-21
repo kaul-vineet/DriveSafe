@@ -120,6 +120,12 @@
 
 -<fieldPermissions>
     <editable>true</editable>
+    <field>Violation__c.Speed__c</field>
+    <readable>true</readable>
+</fieldPermissions>
+
+-<fieldPermissions>
+    <editable>true</editable>
     <field>Violation__c.Name</field>
     <readable>true</readable>
 </fieldPermissions>

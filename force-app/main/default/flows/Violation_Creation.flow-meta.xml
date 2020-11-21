@@ -77,6 +77,12 @@
             </value>
         </inputAssignments>
         <inputAssignments>
+            <field>Speed__c</field>
+            <value>
+                <elementReference>$Record.value__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>Vehicle__c</field>
             <value>
                 <elementReference>VehicleID</elementReference>
@@ -134,7 +140,7 @@
         <object>Violation_Events__e</object>
         <triggerType>PlatformEvent</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <name>VehicleID</name>
         <dataType>String</dataType>
