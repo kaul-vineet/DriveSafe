@@ -66,7 +66,7 @@ Once the package is successfullt deployed, follow the steps below:
    - Deployment Target: CloudHub
    - Application file: Upload the edited application .jar file.
  <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/deploy-mule.png">
-  -Click on the **Deploy Application** button.
+  - Click on the **Deploy Application** button.
 
 ## Step 3: Deploy NODE-RED on Heroku. 
 
