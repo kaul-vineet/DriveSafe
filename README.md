@@ -1,10 +1,41 @@
-# DriveSafe: An IoT use case for auto industry. Built and orchestrated on Salesforce platform.
+# DriveSafe: An IoT use case for auto industry. 
+## Built and orchestrated on Salesforce platform.
 
-This guide helps Salesforce developers who are new to Visual Studio Code go from zero to a deployed app using Salesforce Extensions for VS Code and Salesforce CLI.
+## Step 1: Deploy Salesforce application. 
+
+- Click on the button below to install the DriveSafe application package. The Salesforce Org should be Enterprise and above.
 
 <a href="https://githubsfdeploy.herokuapp.com?owner=kaul-vineet&amp;repo=DriveSafe">
-  <img src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png" alt="Deploy to Salesforce" />
+  <img src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png" alt="Deploy SriveSafe to Salesforce" />
 </a>
+
+
+Once the package is successfullt deployed, follow the steps below: 
+
+- On your iPhone, open "Settings". 
+  - Go to "General" >>  "About".
+  - Tap on "Name".
+  - Change the "Name" of your phone to something unique *e.g. your initials*.
+<img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/IMG_1DDDAA6A93B9-1.jpeg">
+
+- Activate the flow **Violatiob Creation**. This flow is part of the installed package.
+<img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/Flow%20Screen-shot.png">
+
+
+- Goto App Lancher and open application **DriveSafe**.
+<img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/app%20launcher.png">
+
+
+- Create a new contact record with your name or use any of the existing contacts from "All Contacts" list view.
+  - Use any default account for the contact.
+ <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/Screenshot%202020-08-13%20at%2011.34.23%20PM.png">
+
+
+- Go to the **Vehicles** tab.
+  - Create a new Vehicle record and assign the contact created in the last step.
+  - Enter your iPhone NAME under **VIN** field on the vehicle record. **THIS STEP IS VERY IMPORTANT**
+  - Fill in rest of the fields as you see fit.
+<img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/Screenshot%202020-08-13%20at%2011.37.01%20PM.png">
 
 ## Part 1: Choosing a Development Model
 
