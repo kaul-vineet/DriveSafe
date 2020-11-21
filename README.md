@@ -33,13 +33,20 @@ Once the package is successfullt deployed, follow the steps below:
 
 - Go to the **Vehicles** tab.
   - Create a new Vehicle record and assign the contact created in the last step.
-  - Enter your iPhone NAME under **VIN** field on the vehicle record. **THIS STEP IS VERY IMPORTANT**
+  - Enter your iPhone NAME under **VIN** field on the vehicle record, as recorded in the first step. **THIS STEP IS VERY IMPORTANT**
   - Fill in rest of the fields as you see fit.
 <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/Screenshot%202020-08-13%20at%2011.37.01%20PM.png">
 
-## Part 1: Choosing a Development Model
+## Step 2: Deploy NODE-RED on Heroku. 
 
-There are two types of developer processes or models supported in Salesforce Extensions for VS Code and Salesforce CLI. These models are explained below. Each model offers pros and cons and is fully supported.
+- <a href="https://signup.heroku.com/"> Sign up for a Heroku account. </a> I am using <a href="https://github.com/joeartsea"> Atsushi Kojo's </a> implementation of NODE-RED on Heroku. 
+- Setup a NODE-RED instance on Heroku. Click on the deploy button below and follow the steps. 
+- Add the following user-defined variables.
+  - NODE_RED_USERNAME - the username to secure the editor with
+  - NODE_RED_PASSWORD - the password to secure the editor with
+<a href="https://heroku.com/deploy?template=https://github.com/joeartsea/node-red-heroku/tree/master">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>
 
 ### Package Development Model
 
