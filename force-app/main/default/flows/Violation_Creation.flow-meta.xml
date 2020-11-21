@@ -3,8 +3,8 @@
     <assignments>
         <name>GetVIN</name>
         <label>GetVIN</label>
-        <locationX>776</locationX>
-        <locationY>242</locationY>
+        <locationX>50</locationX>
+        <locationY>314</locationY>
         <assignmentItems>
             <assignToReference>VIN</assignToReference>
             <operator>Assign</operator>
@@ -16,6 +16,28 @@
             <targetReference>Get_Vehicle</targetReference>
         </connector>
     </assignments>
+    <decisions>
+        <name>Check_Speed</name>
+        <label>Check Speed</label>
+        <locationX>182</locationX>
+        <locationY>194</locationY>
+        <defaultConnectorLabel>NO VIOLATIONS</defaultConnectorLabel>
+        <rules>
+            <name>VIOLATION</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.value__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>20.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetVIN</targetReference>
+            </connector>
+            <label>VIOLATION</label>
+        </rules>
+    </decisions>
     <interviewLabel>Violation Creation {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Violation Creation</label>
     <processMetadataValues>
@@ -27,7 +49,7 @@
     <processMetadataValues>
         <name>CanvasMode</name>
         <value>
-            <stringValue>FREE_FORM_CANVAS</stringValue>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
         </value>
     </processMetadataValues>
     <processMetadataValues>
@@ -40,8 +62,8 @@
     <recordCreates>
         <name>Create_Violation</name>
         <label>Create Violation</label>
-        <locationX>776</locationX>
-        <locationY>482</locationY>
+        <locationX>50</locationX>
+        <locationY>554</locationY>
         <inputAssignments>
             <field>Date_of_Violation__c</field>
             <value>
@@ -84,8 +106,8 @@
     <recordLookups>
         <name>Get_Vehicle</name>
         <label>Get Vehicle</label>
-        <locationX>776</locationX>
-        <locationY>362</locationY>
+        <locationX>50</locationX>
+        <locationY>434</locationY>
         <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Create_Violation</targetReference>
@@ -104,15 +126,15 @@
         </outputAssignments>
     </recordLookups>
     <start>
-        <locationX>650</locationX>
-        <locationY>48</locationY>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
         <connector>
-            <targetReference>GetVIN</targetReference>
+            <targetReference>Check_Speed</targetReference>
         </connector>
         <object>Violation_Events__e</object>
         <triggerType>PlatformEvent</triggerType>
     </start>
-    <status>Obsolete</status>
+    <status>Draft</status>
     <variables>
         <name>VehicleID</name>
         <dataType>String</dataType>
