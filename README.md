@@ -166,3 +166,6 @@ Once the package is successfullt deployed, follow the steps below:
    - After filling this, click on "MQTT Connect" on the top left corner and it should autosave the details.
    
  <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/IMG_3872.PNG">
+
+
+## Step 4: Finally, test your solution.
