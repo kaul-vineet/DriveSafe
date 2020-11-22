@@ -98,10 +98,10 @@ Once the package is successfullt deployed, follow the steps below:
   
 - Once provisioned, CloudMQTT would appear under Add-ons. Click on the CloudMQTT icon in the list to go to the CloudMQTT setup. 
   - In ClodMQTT setup, note the following
-   - Server
-   - User 
-   - Password
-   - Port
+    - Server
+    - User 
+    - Password
+    - Port
 <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/MQTT.png">
   
   
@@ -110,7 +110,7 @@ Once the package is successfullt deployed, follow the steps below:
 
 
 - Click on hamburger menu at top right corner. 
-  - Click on *Manage palette
+  - Click on *Manage palette*
 <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/import-flow.png">
   
   
@@ -127,7 +127,18 @@ Once the package is successfullt deployed, follow the steps below:
 <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/import-flow.png">
 
 
-- 
+- Once flow is imported, a flow representation would appear on the palette. 
+<img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/node-flow.png">
+
+
+- Configure the MQTT connection
+  - On the info panel, select *Global Configuration Nodes >> mqtt-broker >> 1977*
+  - On the *Connection* tab, specify the name of MQTT Server.
+<img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/flow-mqtt1.png">
+  - On the *Security* tab, specify the *Username & Password* of the MQTT Server.
+<img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/flow-mqtt2.png">
+
+- Click on the RED *Deploye* button. 
 
 
 
