@@ -116,29 +116,53 @@ Once the package is successfullt deployed, follow the steps below:
   
 - Install two libraries
   - node-red-contrib-moment 4.0.0
-  - node-red-contrib-throttle 0.1.6
+  
 <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/install-moment.png">
+
+  - node-red-contrib-throttle 0.1.6
+  
 <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/install-throttle.png">
 
 
 - Click on hamburger menu at top right corner. 
   - Click on *Import*.
   - Import the <a href="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/flows/flows.json"> flow definition </a> in NODE-RED instance.
+  
 <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/import-flow.png">
 
 
 - Once flow is imported, a flow representation would appear on the palette. 
+
 <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/node-flow.png">
 
 
 - Configure the MQTT connection
   - On the info panel, select *Global Configuration Nodes >> mqtt-broker >> 1977*
   - On the *Connection* tab, specify the name of MQTT Server.
+  
 <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/flow-mqtt1.png">
   - On the *Security* tab, specify the *Username & Password* of the MQTT Server.
+  
 <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/flow-mqtt2.png">
 
 - Click on the RED *Deploye* button. 
 
 
+## Step 3: Setup IoT device i.e. your mobile phone.
 
+- Download "Cedalo MQTT Connect" App from App Store. Cedalo Connect is a MQTT client that can publish sensor data from iPhone to the broker.
+
+<img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/IMG_3873.PNG">
+
+- Set up Cedalo MQTT app
+  - Open Cedalo Connect App.
+  - Go to the ⚙️ (gear) icon on the top left corner.
+  - Fill in the following details (please be careful as all details are case sensitive)
+    - URL : *Server from CloudMQTT settings*
+    - Port : *Port from CloudMQTT settings*
+    - Username : *Username from CloudMQTT settings*
+    - Password : *Password from CloudMQTT settings*
+    - Publish : *Any suitable topic name e.g. "violation".
+   - After filling this, click on "MQTT Connect" on the top left corner and it should autosave the details.
+   
+ <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/IMG_3872.PNG">
