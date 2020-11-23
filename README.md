@@ -161,9 +161,7 @@ That is what we have tried to achieve in this submission.
 
    <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/generate-event1.png"> 
 
-
-  - Update the **URL** with http://<**Mulesoft Domain**>/tardisviolationservice/V2/violation
-
+  - Update the **URL** with http://[**Mulesoft Domain**]/tardisviolationservice/V2/violation
 
    <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/generate-event2.png">
 
@@ -184,7 +182,7 @@ That is what we have tried to achieve in this submission.
     - Username : *Username from CloudMQTT settings*
     - Password : *Password from CloudMQTT settings*
     - Publish : *Any suitable topic name e.g. "violation".
-   - After filling this, click on "MQTT Connect" on the top left corner and it should autosave the details.
+   - After filling this, click on **MQTT Connect** on the top left corner and it should autosave the details.
    
  <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/IMG_3872.PNG">
 
@@ -196,7 +194,7 @@ That is what we have tried to achieve in this submission.
 
 - Login into the App:
   - Start by logging into the Salesforce Org and open the DriveSafe app from the Applauncher. 
-  - Open the *Vehicles* tab.
+  - Open the **Vehicles** tab.
 
 <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/Vehicles-tab.png">
 
@@ -209,7 +207,7 @@ That is what we have tried to achieve in this submission.
 
 - Connect your mobile app:
   - Open the Cedalo MQTT Connect app on your mobile. 
-  - Click on *Connect*.
+  - Click on **Connect**.
   - Turn on the slider switch on top right corner. 
   - Move the phone a bit i.e. do not keep it in rest position.
  
@@ -218,7 +216,7 @@ That is what we have tried to achieve in this submission.
  
 - Track the vehicle:
   - Go back to the Vehicle record. 
-  - After a few moment, the *DriveSafe Live* utility bar would start blinking with a red indicator. 
+  - After a few moment, the **DriveSafe Live** utility bar would start blinking with a red indicator. 
   - Click on the utility bar link.
  
  <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/Utility-bar.png">
@@ -250,9 +248,9 @@ That is what we have tried to achieve in this submission.
 - Check violation details:
   - Click on the violation record. 
   - Check violation details:
-   - Speed value.
-   - Geo values of the mobile.
-   - A statis map marked with the location of he mobile.
+  - Speed value.
+  - Geo values of the mobile.
+  - A statis map marked with the location of he mobile.
    
    <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/Violation-details.png">
    
