@@ -5,6 +5,8 @@ All technology professionals are increasingly being inundated with customer requ
 
 That is what we have tried to achieve in this submission. 
 
+### There are 4 parts to the setup, fron setup to test. They might look complicated but everything is point & click configuration.
+
 ## Step 1: Deploy Salesforce application. 
 
 - Click on the button below to install the DriveSafe application package. The Salesforce Org should be Enterprise and above.
