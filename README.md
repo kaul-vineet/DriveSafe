@@ -13,15 +13,9 @@ That is what we have tried to achieve in this submission.
   <img src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png" alt="Deploy SriveSafe to Salesforce" />
 </a>
 
-Once the package is successfullt deployed, follow the steps below: 
 
-- On your iPhone, open "Settings". 
-  - Go to "General" >>  "About".
-  - Tap on "Name".
-  - Change the "Name" of your phone to something unique *e.g. your initials*.
-<img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/IMG_1DDDAA6A93B9-1.jpeg">
-
-- Activate the flow **Violatiob Creation**. This flow is part of the installed package.
+- On successful completion of the deployment, log-in into the Org.
+ - Go-to Settings. Activate the flow **Violatiob Creation**. This flow is part of the installed package.
 <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/Flow%20Screen-shot.png">
 
 
@@ -29,9 +23,18 @@ Once the package is successfullt deployed, follow the steps below:
 <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/app%20launcher.png">
 
 
-- Create a new contact record with your name or use any of the existing contacts from "All Contacts" list view.
+- Create a new contact record with your name or use any of the existing contacts from **All Contacts** list view.
   - Use any default account for the contact.
  <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/Screenshot%202020-08-13%20at%2011.34.23%20PM.png">
+
+
+
+- Get the name of your phone:
+  - On your iPhone, open "Settings". 
+  - Go to "General" >>  "About".
+  - Tap on "Name".
+  - Change the "Name" of your phone to something unique *e.g. your initials*.
+<img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/IMG_1DDDAA6A93B9-1.jpeg">
 
 
 - Go to the **Vehicles** tab.
@@ -42,7 +45,6 @@ Once the package is successfullt deployed, follow the steps below:
 
 
 ## Step 2: Deploy Mule Application on CloudHub. 
-
 
 - Download the mule application <a href="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/mule-app/tardisviolationservicev2.jar">.jar file</a>.
 
@@ -153,6 +155,8 @@ Once the package is successfullt deployed, follow the steps below:
 
 
 ## Step 3: Setup IoT device i.e. your mobile phone.
+
+Once the package is successfullt deployed, follow the steps below: 
 
 - Download "Cedalo MQTT Connect" App from App Store. Cedalo Connect is a MQTT client that can publish sensor data from iPhone to the broker.
 
