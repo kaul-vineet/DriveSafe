@@ -89,11 +89,10 @@ That is what we have tried to achieve in this submission.
 - Add the following user-defined variables.
   - NODE_RED_USERNAME - *the username to secure the editor with*
   - NODE_RED_PASSWORD - *the password to secure the editor with*
+  - Once the setup is complete, a new Heroku application running NODE-Red instance would get created. 
 <a href="https://heroku.com/deploy?template=https://github.com/joeartsea/node-red-heroku/tree/master">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
-  - Once the setup is complete, a new Heroku application running NODE-Red instance would get created. 
-
 
 - Provision a MQTT server to the NODE-RED application by following steps below.
   - Navigate to <a href="https://dashboard.heroku.com/"> Heroku Dashboard. </a>
