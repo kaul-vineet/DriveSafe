@@ -162,6 +162,7 @@ That is what we have tried to achieve in this submission.
    <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/generate-event1.png"> 
 
   - Update the **URL** with http://<**Mulesoft Domain**>/tardisviolationservice/V2/violation
+  
    <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/generate-event2.png">
 
 - Click on the RED **Deploy** button. 
