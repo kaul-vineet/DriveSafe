@@ -179,6 +179,7 @@ Once the package is successfullt deployed, follow the steps below:
 
 <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/Vehicles-tab.png">
 
+
 - Find your vehicle:
   - Find and click on the Vehicle record created as part of setup.
 
@@ -194,20 +195,22 @@ Once the package is successfullt deployed, follow the steps below:
  <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/IMG_3875.jpg">
  
  
- - Track the vehicle:
-  - Go back to the Vehicle record. 
-  - After a few moment, the *DriveSafe Live* utility bar would start blinking with a red indicator. 
-  - Click on the utility bar link.
+- Track the vehicle:
+ - Go back to the Vehicle record. 
+ - After a few moment, the *DriveSafe Live* utility bar would start blinking with a red indicator. 
+ - Click on the utility bar link.
  
  <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/Utility-bar.png">
  
  
- - Check your coordinates: 
-  - A map console would open up.
-  - Check the location indicator in the map. It should eflect the ccordinates of your mobile phone.
+- Check your coordinates/location on the console: 
+ - A map console would open up.
+ - Check the location indicator in the map. It should eflect the ccordinates of your mobile phone.
   
   <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/tracker-1.png">
   
   <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/tracker-2.png">
  
  
+- Create a violation:
+  - 
