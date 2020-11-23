@@ -1,11 +1,11 @@
 # DriveSafe: An IoT use case for auto industry. 
 ## Built and orchestrated on Salesforce platform.
 
-## Step 1: Deploy Salesforce application. 
-
 All technology professionals are increasingly being inundated with customer requirements to connect devices to CRM and/or customer engagement solutions. It is not just important to connect devices with CE systems, but the systems should ingest the streaming data and produce actionable insights into business behavior. IoT today is no longer technology, but a business problem and requires a business-centric solution. Today, companies use IoT data for operational performance in internal silos.
 
 That is what we have tried to achieve in this submission. 
+
+## Step 1: Deploy Salesforce application. 
 
 - Click on the button below to install the DriveSafe application package. The Salesforce Org should be Enterprise and above.
 
