@@ -64,7 +64,7 @@ That is what we have tried to achieve in this submission.
 
 
 - Login into <a href="https://anypoint.mulesoft.com/login"> Anypoint Platform </a>.
-  - Go to *Runtime Manager*
+  - Go to **Runtime Manager**
   
   
 - Click on **Deploy application** button. 
@@ -87,18 +87,18 @@ That is what we have tried to achieve in this submission.
 - <a href="https://signup.heroku.com/"> Sign up for a Heroku account. </a> I am using <a href="https://github.com/joeartsea"> Atsushi Kojo's </a> implementation of NODE-RED on Heroku. 
 - Setup a NODE-RED instance on Heroku. Click on the deploy button below and follow the steps. 
 - Add the following user-defined variables.
-  - NODE_RED_USERNAME - the username to secure the editor with
-  - NODE_RED_PASSWORD - the password to secure the editor with
+  - NODE_RED_USERNAME - *the username to secure the editor with*
+  - NODE_RED_PASSWORD - *the password to secure the editor with*
 <a href="https://heroku.com/deploy?template=https://github.com/joeartsea/node-red-heroku/tree/master">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
+  - Once the setup is complete, a new Heroku application running NODE-Red instance would get created. 
 
-- Navigate to <a href="https://dashboard.heroku.com/"> Heroku Dashboard. </a>
-  - Open the NODE-RED application. 
+
+- Provision a MQTT server to the NODE-RED application by following steps below.
+  - Navigate to <a href="https://dashboard.heroku.com/"> Heroku Dashboard. </a>
+  - Open the Heroku application by clicking on application name. 
   - Click on the **Resource** tab.
-  
-
-- Provision a MQTT server to the NODE-RED application.
   - Under **Add-On**, type *CloudMQTT*. A CloudMQTT option would appear. Click on it. 
   - Select a free plan in the provisioning pop-up and click on *Sumbit Order Form*. 
 <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/MQTT%20-%20install.png">
@@ -112,7 +112,10 @@ That is what we have tried to achieve in this submission.
 <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/MQTT.png">
   
   
-- Login into the Heroku App. 
+- Configure NODE-Red application by following steps below:
+  - Navigate to <a href="https://dashboard.heroku.com/"> Heroku Dashboard. </a>
+  - Open the Heroku application by clicking on application name. 
+  - Login into the NODE-Red application by clicking the **Open App** button on the . 
   - Use NODE_RED_USERNAME & NODE_RED_PASSWORD as credentials.
 
 
@@ -143,21 +146,27 @@ That is what we have tried to achieve in this submission.
 <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/node-flow.png">
 
 
-- Configure the MQTT connection
-  - On the info panel, select *Global Configuration Nodes >> mqtt-broker >> 1977*
-  - On the *Connection* tab, specify the name of MQTT Server.
+- Configure the MQTT connection by following the steps below:
+  - On the info panel, select **Global Configuration Nodes >> mqtt-broker >> 1977**
+  - On the **Connection** tab, specify the name of MQTT Server.
   
 <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/flow-mqtt1.png">
   - On the *Security* tab, specify the *Username & Password* of the MQTT Server.
   
 <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/flow-mqtt2.png">
 
-- Click on the RED *Deploye* button. 
 
+- Integrate NODE-Red with Mulesoft ESB by following the steps below:
+  - Double-click and open the **GENERATE EVENT** node. 
+
+   <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/generate-event1.png"> 
+
+  - Update the **URL** with http://<**Mulesoft Domain**>/tardisviolationservice/V2/violation
+   <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/generate-event2.png">
+
+- Click on the RED **Deploy** button. 
 
 ## Step 3: Setup IoT device i.e. your mobile phone.
-
-Once the package is successfullt deployed, follow the steps below: 
 
 - Download "Cedalo MQTT Connect" App from App Store. Cedalo Connect is a MQTT client that can publish sensor data from iPhone to the broker.
 
