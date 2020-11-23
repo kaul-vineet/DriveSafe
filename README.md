@@ -3,6 +3,10 @@
 
 ## Step 1: Deploy Salesforce application. 
 
+All technology professionals are increasingly being inundated with customer requirements to connect devices to CRM and/or customer engagement solutions. It is not just important to connect devices with CE systems, but the systems should ingest the streaming data and produce actionable insights into business behavior. IoT today is no longer technology, but a business problem and requires a business-centric solution. Today, companies use IoT data for operational performance in internal silos.
+
+That is what we have tried to achieve in this submission. 
+
 - Click on the button below to install the DriveSafe application package. The Salesforce Org should be Enterprise and above.
 
 <a href="https://githubsfdeploy.herokuapp.com?owner=kaul-vineet&amp;repo=DriveSafe">
@@ -187,25 +191,25 @@ Once the package is successfullt deployed, follow the steps below:
 
 
 - Connect your mobile app:
- - Open the Cedalo MQTT Connect app on your mobile. 
- - Click on *Connect*.
- - Turn on the slider switch on top right corner. 
- - Move the phone a bit i.e. do not keep it in rest position.
+  - Open the Cedalo MQTT Connect app on your mobile. 
+  - Click on *Connect*.
+  - Turn on the slider switch on top right corner. 
+  - Move the phone a bit i.e. do not keep it in rest position.
  
  <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/IMG_3875.jpg">
  
  
 - Track the vehicle:
- - Go back to the Vehicle record. 
- - After a few moment, the *DriveSafe Live* utility bar would start blinking with a red indicator. 
- - Click on the utility bar link.
+  - Go back to the Vehicle record. 
+  - After a few moment, the *DriveSafe Live* utility bar would start blinking with a red indicator. 
+  - Click on the utility bar link.
  
  <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/Utility-bar.png">
  
  
-- Check your coordinates/location on the console: 
- - A map console would open up.
- - Check the location indicator in the map. It should eflect the ccordinates of your mobile phone.
+ - Check your coordinates/location on the console: 
+   - A map console would open up.
+   - Check the location indicator in the map. It should eflect the ccordinates of the mobile phone sending the signals.
   
   <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/tracker-1.png">
   
@@ -213,4 +217,29 @@ Once the package is successfullt deployed, follow the steps below:
  
  
 - Create a violation:
-  - 
+  - Make sure the Cedalo MQTT Connect is in connected state. 
+  - Shake the phone (horizontal or vertical). This is to make sure that the linear velocity of the phone is more than 20. This is the condition to create the violation. 
+  
+    <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/move%20it.jpeg">
+  
+  
+ - Check violation: 
+   - Go back to the vehicle record. 
+   - Click on the **Related** tab. 
+   - If all went well, a violation record would appear with a new violation. 
+   
+   <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/Violation-tab.png">
+   
+- Check violation details:
+  - Click on the violation record. 
+  - Check violation details:
+   - Speed value.
+   - Geo values of the mobile.
+   - A statis map marked with the location of he mobile.
+   
+   <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/Violation-details.png">
+   
+ 
+ - Try it out again !! If you face any challenges, ping me on GitHub and I'd revert.
+ 
+ 
