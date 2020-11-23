@@ -173,7 +173,7 @@ Once the package is successfullt deployed, follow the steps below:
 - Well, finally you are all set to check and test the solution. 
 
 
---Login into the App:
+- Login into the App:
   - Start by logging into the Salesforce Org and open the DriveSafe app from the Applauncher. 
   - Open the *Vehicles* tab.
 
