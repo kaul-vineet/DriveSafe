@@ -169,3 +169,45 @@ Once the package is successfullt deployed, follow the steps below:
 
 
 ## Step 4: Finally, test your solution.
+
+- Well, finally you are all set to check and test the solution. 
+
+
+--Login into the App:
+  - Start by logging into the Salesforce Org and open the DriveSafe app from the Applauncher. 
+  - Open the *Vehicles* tab.
+
+<img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/Vehicles-tab.png">
+
+- Find your vehicle:
+  - Find and click on the Vehicle record created as part of setup.
+
+<img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/Vehicle-details.png">
+
+
+- Connect your mobile app:
+ - Open the Cedalo MQTT Connect app on your mobile. 
+ - Click on *Connect*.
+ - Turn on the slider switch on top right corner. 
+ - Move the phone a bit i.e. do not keep it in rest position.
+ 
+ <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/IMG_3875.jpg">
+ 
+ 
+ - Track the vehicle:
+  - Go back to the Vehicle record. 
+  - After a few moment, the *DriveSafe Live* utility bar would start blinking with a red indicator. 
+  - Click on the utility bar link.
+ 
+ <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/Utility-bar.png">
+ 
+ 
+ - Check your coordinates: 
+  - A map console would open up.
+  - Check the location indicator in the map. It should eflect the ccordinates of your mobile phone.
+  
+  <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/tracker-1.png">
+  
+  <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/tracker-2.png">
+ 
+ 
