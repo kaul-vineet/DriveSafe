@@ -151,8 +151,9 @@ That is what we have tried to achieve in this submission.
   - On the **Connection** tab, specify the name of MQTT Server.
   
 <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/flow-mqtt1.png">
+
   - On the *Security* tab, specify the *Username & Password* of the MQTT Server.
-  
+ 
 <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/flow-mqtt2.png">
 
 
@@ -161,8 +162,10 @@ That is what we have tried to achieve in this submission.
 
    <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/generate-event1.png"> 
 
+
   - Update the **URL** with http://<**Mulesoft Domain**>/tardisviolationservice/V2/violation
-  
+
+
    <img src="https://github.com/kaul-vineet/DriveSafe/blob/master/images/generate-event2.png">
 
 - Click on the RED **Deploy** button. 
