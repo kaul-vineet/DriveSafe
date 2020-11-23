@@ -33,7 +33,8 @@ That is what we have tried to achieve in this submission.
   - On your iPhone, open "Settings". 
   - Go to "General" >>  "About".
   - Tap on "Name".
-  - Change the "Name" of your phone to something unique *e.g. your initials*.
+  - Write doen the name of the phone.
+   - Change the "Name" of your phone to something **unique** *e.g. your initials*.
 <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/IMG_1DDDAA6A93B9-1.jpeg">
 
 
@@ -53,8 +54,8 @@ That is what we have tried to achieve in this submission.
   - Open the application .jar file. 
   - Open the mule-artifact.propeties and edit following parameters:
    - salesforce.General.securityToken.value=*security token of the Salesforce Org*
-   - cloudhub_http.Connection.host.value=0.0.0.0
-   - cloudhub_http.Connection.port.value=8081
+   - cloudhub_http.Connection.host.value=**0.0.0.0**
+   - cloudhub_http.Connection.port.value=**8081**
    - salesforce.General.username.value=*username of the Salesforce Org*
    - salesforce.General.password.value=*password of the Salesforce Org*
   - Save the file at it's original location. 
@@ -68,8 +69,8 @@ That is what we have tried to achieve in this submission.
   
 - Click on **Deploy application** button. 
   - On the Deploy Application screen, fill in tehe details as below
-   - Application Name: Any suitable name
-   - Deployment Target: CloudHub
+   - Application Name: *Any suitable name*
+   - Deployment Target: **CloudHub**
    - Application file: Upload the edited application .jar file.
    - Click on the **Deploy Application** button.
  <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/deploy-mule.png">
