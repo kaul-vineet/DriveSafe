@@ -15,7 +15,7 @@ That is what we have tried to achieve in this submission.
 
 
 - On successful completion of the deployment, log-in into the Org.
- - Go-to Settings. Activate the flow **Violatiob Creation**. This flow is part of the installed package.
+  - Go-to Settings. Activate the flow **Violatiob Creation**. This flow is part of the installed package.
 <img src="https://github.com/kaul-vineet/DriveSafe-sf/blob/master/images/Flow%20Screen-shot.png">
 
 
